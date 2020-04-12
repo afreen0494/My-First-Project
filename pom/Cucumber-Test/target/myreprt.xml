@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="26.107">
+<testcase classname="Login functionality" name="Sucessful Login with valid credentials" time="11.399">
+<system-out><![CDATA[Given User on login page....................................................passed
+When User enters valid  "test" and "test"...................................passed
+And User clicks on login button.............................................passed
+Then User lands on Weclome page.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="Sucessful Login with valid credentials 2" time="10.281">
+<system-out><![CDATA[Given User on login page....................................................passed
+When User enters valid  "test1" and "test1".................................passed
+And User clicks on login button.............................................passed
+Then User lands on Weclome page.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="Sucessful Login with valid credentials 3" time="3.863">
+<failure message="unknown error: cannot determine loading status&#10;from disconnected: received Inspector.detached event&#10;  (Session info: chrome=80.0.3987.149)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ARIF-HP', ip: '192.168.43.155', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_221'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\afreen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50433}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 42df6c12e751be05d251d4e2abdbc1fc" type="org.openqa.selenium.WebDriverException"><![CDATA[Given User on login page....................................................failed
+When User enters valid  "test2" and "test2".................................skipped
+And User clicks on login button.............................................skipped
+Then User lands on Weclome page.............................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=80.0.3987.149)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ARIF-HP', ip: '192.168.43.155', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\afreen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50433}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 42df6c12e751be05d251d4e2abdbc1fc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.cts.steps.StepsToExecute.user_on_login_page(StepsToExecute.java:20)
+	at ✽.User on login page(file:///C:/afreen/github_projects/My-First-Project/pom/Cucumber-Test/NewToursAppFeatures/Login.feature:27)
+]]></failure>
+</testcase>
+</testsuite>
